@@ -25,7 +25,6 @@ router.post('/', authMiddleware, async (req, res) => {
   }
 });
 
-// שליפת כל המסלולים של המשתמש המחובר
 router.get('/', authMiddleware, async (req, res) => {
     try {
       const trips = await Trip.find({ userId: req.userId });
@@ -36,7 +35,6 @@ router.get('/', authMiddleware, async (req, res) => {
     }
   });  
 
-  // שליפת מסלול בודד לפי ID
 router.get('/:id', authMiddleware, async (req, res) => {
     try {
       const trip = await Trip.findOne({ _id: req.params.id, userId: req.userId });

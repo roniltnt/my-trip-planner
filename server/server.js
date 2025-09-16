@@ -9,7 +9,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ הכנסנו את הראוטר לפני התחברות למסד נתונים
 app.use('/api/auth', authRoutes);
 app.use('/api/trips', tripRoutes);
 

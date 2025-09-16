@@ -3,7 +3,7 @@ const tripSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   name: { type: String, required: true },
   description: { type: String },
-  location: { type: String, required: true }, // עיר/מדינה
+  location: { type: String, required: true },
   type: { type: String, enum: ['hike', 'bike'], required: true },
   route: [
     {
