@@ -122,6 +122,7 @@ const TripPlanner = () => {
   const [type, setType] = useState('hike');
   const [route, setRoute] = useState([]);
   const [weather, setWeather] = useState(null);
+  const [userName, setUserName] = useState('Roni Laufer');
   const [imageUrl, setImageUrl] = useState(null);
   const [tripName, setTripName] = useState('');
   const [tripDescription, setTripDescription] = useState('');
@@ -271,6 +272,14 @@ const TripPlanner = () => {
             </div>
           </div>
         )}
+
+        {userName && (
+          <div className="mt-6">
+            <h1> User Name</h1>
+            {userName}
+            </div>
+        )
+        }
 
 
         {route.length > 1 && (
