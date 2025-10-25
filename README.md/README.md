@@ -79,17 +79,17 @@ JWT-based authentication with tokens stored in `localStorage`.
 
 #### Server
 
-cd server
-npm i
-cp .env.example .env
-# Fill: REACT_APP_ORS_API_KEY, REACT_APP_UNSPLASH_ACCESS_KEY, JWT_SECRET
-npm start
+- cd server
+- npm i
+- cp .env.example .env
+- Fill: REACT_APP_ORS_API_KEY, REACT_APP_UNSPLASH_ACCESS_KEY, JWT_SECRET
+- npm start
 
 #### Client 
 
-cd client
-npm i
-npm start   # http://localhost:3000
+- cd client
+- npm i
+- npm start   # http://localhost:3000
 
 ### API reference
 
